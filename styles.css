@@ -86,7 +86,7 @@ p {
   .divider {
     width: 630px;
     max-width: 90%;
-    border-top: 1px solid #B59EE6;
+    border-top: 2px solid #B59EE6;
   }
 }
 

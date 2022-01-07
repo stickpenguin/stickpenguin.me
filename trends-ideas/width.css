@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'chanticleerromanregular';
+    src: url('CHANTICL-webfont.eot');
+    src: url('CHANTICL-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CHANTICL-webfont.woff') format('woff'),
+         url('CHANTICL-webfont.ttf') format('truetype'),
+         url('CHANTICL-webfont.svg#chanticleerromanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+body{
+	text-align: center; /* This is a fix for IE, puts all the text in the middle */
+
+}
+
+#wrapper{
+	background-color: #CCCCCC;
+	max-width: 960px;   /* total width */
+	width: calc(100% - 100px);
+	height: 100%;
+	padding: 10px;
+	margin: 0px auto; /* auto centers the document always based on the browser document, fixed width, floating, IMPORTANT*/
+	text-align: left; /* sets everything back to the left to override the IE bug */
+	
+}
+
+
+header{
+	display:block;
+	background-color: #C0D7CF;
+	font-family: 'chanticleerromanregular', serif; 
+	font-size: 25px;
+	
+}
+
+nav {
+	background-color: #333333;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+}
+
+nav ul {
+	list-style:none;
+	display: block;
+	margin: 0px;
+	padding: 5px 0px 0px 0px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}	
+
+nav ul li {
+	display: inline;
+	margin: 0px;
+}
+
+nav ul li a {
+	background-color: #333333;
+	color: #fff;
+	padding: 5px 0px 5px 0px;
+	text-decoration: none;
+	border-right: #444444 solid 1px;
+}
+
+nav ul li a:hover {
+	background-color: #8f0674;
+}
+
+
+
+h2{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 24px;
+	margin-bottom: 5px;
+
+}
+
+
+#main-content{
+	background-color: #D7C0D0;
+	display:block;
+	max-width: 640px;
+	height: 100%;
+	float: left;
+	padding: 7px; 
+	margin-bottom: 7px;
+	padding-bottom: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 19px;
+	clear: both;
+	
+}
+
+h3{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 19px;
+	margin-bottom: 7px;
+
+}
+
+p{
+	margin: 10px 0px;
+}
+
+
+aside{
+	background-color: #DFEBA9;
+	display: block;
+	max-width:300px;
+	height: 100%;
+	float: left;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	
+}
+
+
+
+footer{
+	background-color: #EDFAFF;
+	clear: both;  /*stops the float properties from affecting the footer */
+	display:block;
+	padding: 5px 7px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+
+}
+

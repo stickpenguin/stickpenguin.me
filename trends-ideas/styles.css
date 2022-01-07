@@ -1,0 +1,904 @@
+/********** global **********/
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Yantramanav";
+    font-weight: 100;
+    -moz-user-select: none;
+  }
+
+  #wrapper {
+    width: 960px;
+    padding: 0px;
+    margin: 0px auto;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.15);
+  }
+
+  body {
+    background-color: #eeeeee;
+  }
+
+  ul {
+    list-style: none;
+    display: inline;
+  }
+
+  ul li {
+    display: inline;
+  }
+
+  a {
+    text-decoration: none;
+    outline: 0;
+  }
+
+  section {
+    width: 840px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 9px;
+    color: black;
+    cursor: default;
+  }
+
+  h2:hover {
+    color: #aaaaaa;
+    transition: .2s ease-out;
+  } 
+
+  p {
+    cursor: default;
+  }
+
+  section h3 {
+    text-align: center;
+    cursor: default;
+  }
+
+  section h4 {
+    text-align: center;
+    cursor: default;
+  }
+
+/********** nav **********/
+
+  header {
+    position: absolute;
+    width: 890px;
+    margin: 40px;
+    z-index: 2;
+  }
+
+  .logo {
+    cursor: pointer;
+    opacity: .5;
+  }
+
+  .logo:hover {
+    opacity: .7;
+    transition: .3s;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 840px;
+    height: 60px;
+    padding: 0px 60px 0px 60px;
+    top: 0px;
+    z-index: 5;
+    background-color: #f8a22f;
+    box-shadow: 0px 10px 30px -10px rgba(0,0,0,.5);
+    display: none;
+  }
+
+  .navbar .logo {
+    margin-top: 15px;
+    opacity: .8;
+  }
+
+  .navbar .logo:hover {
+    opacity: .5;
+    transition: .2s;
+  }
+
+  .navbar nav {
+    width: 820px;
+    top: 20px;
+    left: 135px;
+    padding-bottom: 0px;
+    margin-right: 60px;
+    border: none;
+  }
+
+  .navbar nav ul li {
+    margin-right: 25px;
+  }
+
+  .navbar nav ul li a {
+    font-weight: 300;
+    font-size: 16px;
+    opacity: 1;
+  }
+
+  .navbar nav ul li a:hover {
+    opacity: .6;
+    transition: .1s;
+  }
+
+  .navbar .nav1 {
+    margin-left: 0px;
+  }
+
+  .navbar .search {
+    position: absolute;
+    bottom: 0px;
+    left: 755px;
+    opacity: .9;
+    cursor: pointer;
+  }
+
+  .navbar .search:hover {
+    opacity: .5;
+    transition: .1s;
+  }
+
+  nav {
+    position: absolute;
+    width: 810px;
+    bottom: 4px;
+    right: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    padding-bottom: 10px;
+  }
+
+  nav ul {
+    float: left;
+    position: relative;
+  } 
+
+  nav ul li {
+    float: left;
+    margin-right: 43px;
+  }
+
+  nav ul li a {
+    font-size: 12.5px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    opacity: .6;
+  }
+
+  nav ul li a:hover {
+    color: white;
+    opacity: .8;
+    transition: .3s;
+  }
+
+  nav ul .nav1 {
+    margin-left: 7px;
+  }
+
+  nav ul .search {
+    margin-right: 0px;
+    opacity: .6;
+    cursor: pointer;
+  }
+
+  nav ul .search:hover {
+    opacity: 1;
+    transition: .3s;
+  }
+
+/********** featured **********/
+
+  #featured {
+    width: 960px;
+    height: 540px;
+  }
+
+  #featured img {
+    width: 960px;
+    z-index: -1;
+  }
+
+  #featured-text {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+  }
+
+  #featured h1 {
+    right: 0px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  #featured h1 a:visited, a, a:hover, a:active {
+    color: white;   
+  }
+
+  #featured p {
+    float: right;
+    width: 400px;
+    color: white;
+    text-align: right;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: .4px;
+  }
+
+/********** latest **********/
+
+  article {
+    position: relative;
+  }
+
+  #latest {
+    height: 710px;
+    margin: 50px 60px 40px 60px;
+  }
+
+  #latest .accent {
+    width: 135px;
+    margin-bottom: 30px;
+  }
+
+  #latest .content {
+    color: white;
+    text-align: center;
+  }
+
+  #latest h3 {
+    position: absolute;
+    font-weight: 300;
+    letter-spacing: .3px;
+    cursor: pointer;
+  }
+
+  #latest p {
+    position: absolute;
+    letter-spacing: .3px;
+    line-height: 150%;
+    cursor: pointer;
+  }
+
+  #latest img {
+    float: left;
+  }
+
+  #latest1 {
+    position: absolute;
+    width: 550px;
+    left: 0px;
+    top: 70px;
+  }
+
+  #latest2 {
+    position: absolute;
+    width: 270px;
+    height: 170px;
+    right: 0px;
+    top: 70px;
+  }
+
+  #latest3 {
+    position: absolute;
+    width: 270px;
+    height: 170px;
+    right: 0px;
+    top: 260px;
+  }
+
+  #latest4 {
+    position: absolute;
+    width: 200px;
+    height: 260px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  #latest5 {
+    position: absolute;
+    width: 620px;
+    height: 260px;    
+    bottom: 0px;
+    right: 0px;
+  }
+
+  #latest1 h3 {
+    width: 300px;
+    top: 140px;
+    margin: 0px 125px;
+    font-size: 25px;
+  }
+
+  #latest2 h3, #latest3 h3 {
+    width: 130px;
+    top: 55px;
+    margin: 0px 70px;
+    font-size: 18px;
+  }
+
+  #latest4 h3 {
+    width: 130px;
+    top: 98px;
+    margin: 0px 35px;
+    font-size: 18px;
+  }
+
+  #latest5 h3 {
+    top: 92px;
+    margin: 0px 160px;
+    width: 300px;
+    font-size: 25px;
+  }
+
+  #latest1 p {
+    width: 400px;
+    top: 180px;
+    margin: 0px 75px;
+  }
+
+  #latest2 p, #latest3 p {
+    width: 230px;
+    top: 82px;
+    margin: 0px 20px;
+    font-size: 12px;
+    letter-spacing: .2px;
+  }
+
+  #latest4 p {
+    width: 145px;
+    top: 130px;
+    margin: 0px 30px;
+    font-size: 13px;
+    letter-spacing: .5px;
+  }
+
+  #latest5 p {
+    top: 128px;
+    width: 500px;
+    margin: 0px 60px;
+  }
+
+  #latest .overlay {
+    position: absolute;
+  }
+
+  #latest1 .overlay {
+    width: 550px;
+    height: 360px;
+    top: 0px;
+    left: 0px;
+  } 
+  
+  #latest2 .overlay, #latest3 .overlay {
+    width: 270px;
+    height: 170px;
+    top: 0px;
+    left: 0px;
+    opacity: .25;
+  }
+
+  #latest4 .overlay {
+    width: 200px;
+    height: 260px;
+    top: 0px;
+    left: 0px;
+  } 
+
+  #latest5 .overlay {
+    width: 620px;
+    height: 260px;
+    top: 0px;
+    left: 0px;
+    opacity: .25;
+  }
+
+  #latest .content:hover .overlay {
+    opacity: .5;
+  }
+
+/********** video **********/
+
+  #video {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  #video .accent {
+    width: 115px;
+  } 
+
+  #video img {
+    float: left;
+  }
+
+  #video h3 {
+    margin: 145px 90px 25px;
+    opacity: .85;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 150%;
+    letter-spacing: .4px;
+  }
+
+  #video .border {
+    width: 760px;
+    height: 410px;
+    margin: 30px 40px;
+  }
+
+  #video .border img {
+    position: absolute;
+    opacity: .7;
+    cursor: pointer;
+  }
+
+  #video .border img:hover {
+    opacity: 1;
+    transition: .4s ease-out;
+  }
+
+  #video .border h3:hover {
+    opacity: .95;
+    transition: .4s ease-out;
+  }
+
+  #video .overlay {
+    position: absolute;
+    height: 470px;
+    width: 840px;
+    z-index: 0;
+  }
+
+  #video .content:hover .overlay {
+    opacity: .5;
+  }
+
+/********** galleries **********/
+
+  #galleries {
+    margin: 0px 60px 0px 60px;
+  }
+
+  #galleries h3 {
+    width: 210px;
+    margin: 130px 75px 10px;
+    opacity: .85;
+    font-size: 30px;
+    letter-spacing: .3px;
+    line-height: 125%;
+    cursor: pointer;
+  }
+
+  #galleries h3 a {
+    font-weight: 300;
+  }
+
+  #galleries h3:hover {
+    opacity: .95;
+    transition: .3s ease-out;
+  }
+
+  #galleries h4 {
+    margin-bottom: 20px;
+    opacity: .85;
+    letter-spacing: .3px;
+  }
+
+  #galleries p {
+    float: left;
+    width: 65px;
+    opacity: .7;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  #galleries #g1 img {
+    float: left;
+    padding-right: 20px;
+  }
+
+  #galleries #g2 img {
+    float: left;
+  }
+
+  #galleries .border {
+    width: 350px;
+    height: 410px;
+    margin: 30px;
+  }
+
+  #galleries #g2 .border {
+    right: 0px;
+  }
+
+  #galleries .overlay {
+    position: absolute;
+    width: 410px;
+    height: 470px;
+    z-index: 0;
+  }
+
+  #galleries #g2 .overlay {
+    right: 0px;
+    opacity: .4;
+  }
+
+  #galleries #g1:hover .overlay {
+    opacity: .5;
+  }
+
+  #galleries #g2:hover .overlay {
+    opacity: .6;
+  } 
+
+  #galleries #g1 .content .content {
+    margin: 0px 129px;
+  }
+
+  #galleries #g2 .content .content {
+    margin: 0px 139px;
+  }
+
+  #galleries .content .content img {
+    position: relative;
+    left: 0px;
+    top: 4px;
+  }
+
+/********** subscribe **********/
+
+  #subscribe {
+    width: 960px;
+    height: 180px;
+    padding: 80px 0px;
+    margin: 60px 0px;
+    color: white;
+    background-image: url("images/subscribe.jpg");
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,1);
+  }
+
+  #subscribe h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+  }
+
+  #subscribe img {
+    position: relative;
+    float: right;
+    right: 322px;
+    bottom: 21px;
+    cursor: pointer;
+  }
+
+  #subscribe form input {
+    width: 270px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: .3px;
+    line-height: 175%;
+    -moz-user-select: text;
+  }
+
+  #subscribe form {
+    width: 270px;
+    margin: 20px auto 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  ::-webkit-input-placeholder {
+      color: white;
+      opacity: .5;
+  }
+
+/********** issue **********/
+
+  #issue {
+    margin: 60px 60px;
+  }
+
+  #issue .accent {
+    width: 90px;
+  }
+
+  #issue #print-issue {
+    float: left;
+    margin-left: 40px;
+  }
+
+  #issue .overlay {
+    position: absolute;
+    width: 358px;
+    height: 470px;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+  }
+
+  #issue .button {
+    position: absolute;
+    left: 90px;
+    top: 210px;
+    padding: 6px 35px 5px;
+    background-color: #f8a22f;
+    opacity: 0;
+    transition: .2s ease-out;
+  }
+
+  #issue #print-issue a {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: -.2px;
+  }
+
+  #issue .content:hover .overlay {
+    opacity: .4;
+  }
+
+  #issue .content:hover .button {
+    opacity: 1;
+  }
+
+  #issue .button:hover {
+    background-color: #e69442;
+  }
+
+  #issue .content {
+    float: right;
+    width: 350px;
+    height: 470px;
+    margin-right: 50px;
+  }
+
+  #issue #iOS-app {
+    position: absolute;
+    right: 62px;
+  }
+
+  #issue #android-app {
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+  }
+
+  #issue p {
+    position: absolute;
+    bottom: 60px;
+    right: 3px;
+    font-size: 17px;
+  }
+
+  #app-store, #play-store {
+    position: absolute;
+    width: 150px;
+    bottom: 0px;
+  }
+
+  #app-store:hover, #play-store:hover {
+    opacity: .7;
+    transition: .1s ease-out;
+  }
+
+  #issue #play-store {
+    right: 0px;
+  }
+
+  #issue #app-store {
+    right: 170px;
+  }
+
+/********** instagram **********/
+
+  #instagram {
+    margin: auto 60px;
+  }
+
+  #instagram .accent {
+    width: 170px;
+    margin-top: 9px;
+  }
+
+  #instagram .content {
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  #instagram h2 {
+    display: inline;
+  }
+
+  #instagram h2 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #instagram .highlight {
+    color: #f8a22f;
+    font-weight: 300;
+  }
+
+  #instagram .highlight:hover {
+    color: #f68f09;
+    font-weight: 400;
+  }
+
+  #instagram ul {
+    float: left;
+    list-style: none;
+  }
+      
+  #instagram ul li {
+    float: left;
+    display: inline;
+    margin-right: 13px;
+  }
+
+  #instagram #ig4 {
+    margin-right: 0px;
+  }
+
+  #instagram img {
+    float: left;
+  }
+
+  #instagram .overlay {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transition: .2s ease-out;
+  }
+
+  #instagram .overlay:hover {
+    opacity: 0.3;
+  }
+
+/********** footer **********/
+
+  footer {
+    position: relative;
+    height: 74px;
+    padding: 40px 60px;
+    margin-top: 60px;
+    background-color: #f8a22f;
+    font-size: 11px;
+    letter-spacing: .2px;
+  }
+
+  footer h6 {
+    color: white;
+    font-weight: 400;
+    font-size: 11px;
+    cursor: default;
+  }
+
+  footer ul li a:hover {
+    opacity: .6;
+    transition: .1s ease-out;
+  }
+
+  #footer-logo {
+    position: absolute;
+    top: 53px;
+    left: 60px;
+  }
+
+  #pubs {
+    position: absolute;
+    width: 130px;
+    left: 160px;
+    top: 40px;
+  }
+
+  #pubs ul li a {
+    display: block;
+  }
+
+  #lib {
+    position: absolute;
+    width: 70px;
+    left: 318px;
+    top: 40px;
+  }
+
+  #digital {
+    position: absolute;
+    width: 40px;
+    left: 425px;
+    top: 40px;
+  }
+
+  #company {
+    position: absolute;
+    width: 40px;
+    left: 510px;
+    top: 40px;
+  }
+
+  #follow {
+    position: absolute;
+    width: 110px;
+    left: 597px;
+    top: 40px;
+  }
+
+  #social {
+    width: 110px;
+    margin-top: 3px;
+  }
+
+  #follow #social ul li a img {
+    margin: 10px 10px 0px 0px;
+  }
+
+  #legal {
+    position: absolute;
+    width: 140px;
+    right: 60px;
+    bottom: 37px;
+    color: white;
+    text-align: right;
+    line-height: 150%;
+    cursor: default;
+  }
+
+/********** objects **********/
+
+  .content {
+    position: relative;
+  }
+
+  .border {
+    position: absolute;
+    color: white;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+  }
+
+  .accent {
+    border-top: 1px solid #f8a22f;
+    width: 60px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+  }
+
+  #gradient {
+    position: absolute;
+    width: 960px;
+    height: 540px;
+    top: 0px;
+    z-index: 0;
+    background: -moz-linear-gradient(rgba(0,0,0,.5),rgba(255,255,255,0),rgba(255,255,255,0));
+    transition: .3s ease-out;
+  }
+
+  .overlay {
+    background-color: black;
+    opacity: .3;
+    transition: .3s ease-out;
+  }
+
+  .clear {
+    clear: both;
+  }

@@ -1,0 +1,170 @@
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 100%;
+  width: 100%;
+  padding-top: 20vh;
+}
+
+section {
+  max-width: 75%;
+  width: calc(100% - 120px);
+  margin: 0px auto;
+  position: relative;
+  height: auto;
+}
+
+h2 {
+  font-size: 2.3vw;
+  font-weight: 300;
+}
+
+#kitchens .accent {
+  width: 7vw;
+}
+
+#kitchens article {
+  position: relative;
+  float: left;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#kitchens article a {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#kitchens img {
+  filter: brightness(70%);
+  float: left;
+  width: 100%;
+}  
+
+#kitchens h3 {
+  font-weight: 300;
+  letter-spacing: .4px;
+  margin-bottom: 3vh;  
+  cursor: pointer;
+}
+
+#kitchens p {
+  letter-spacing: .7px;
+  line-height: 2;
+  cursor: pointer;
+  line-height: 1.8;
+}
+
+#kitchens .text {
+  position: absolute;
+  height: auto;
+  width: auto;
+  margin: auto 0px;
+  width: 100%;
+}
+
+.right {
+  margin-left: 2%;
+}
+
+#fire, #eclectic {
+  width: 49%;
+}
+  #fire h3, #eclectic h3 {
+    font-size: 2vw;
+  }
+  #fire p, #eclectic p {
+    font-size: 1.2vw;
+    margin: 0% 16%;
+  }
+
+#bamboo {
+  width: 65.75%;
+}
+  #bamboo h3 {
+    font-size: 2.3vw;
+  }
+  #bamboo p {
+    font-size: 1.4vw;
+    margin: 0% 12%;
+  }
+
+#naturel {
+  width: 32.25%;
+}
+  #naturel h3 {
+    font-size: 2vw;
+  }
+  #naturel p {
+    font-size: 1.2vw;
+    margin: 0% 5%;
+  }
+
+#sophisticated {
+  width: 40.59%;
+}
+  #sophisticated h3 {
+    font-size: 1.7vw;
+  }
+  #sophisticated p {
+    font-size: 1.2vw;
+    margin: 0% 12%;
+  }
+
+#illuminate {
+  width: 57.41%;
+}
+  #illuminate h3 {
+    font-size: 2.1vw;
+  }
+  #illuminate p {
+    font-size: 1.2vw;
+    margin: 0% 16%;
+  }
+
+#basics {
+  width: 100%;
+}
+  #basics h3 {
+    font-size: 2.6vw;
+    margin-bottom: 3.2vh;
+  }
+  #basics p {
+    font-size: 1.4vw;
+    margin: 0% 16%;
+  }
+
+#kitchens article:hover img {
+  filter: brightness(50%);
+  transition: .3s ease-out;
+}
+
+.load-more {
+  width: 120px;
+  margin: 70px auto;
+  margin-bottom: 100px;
+  cursor: pointer;
+  height: auto;
+}
+
+.load-more p {
+  width: auto;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: .5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.load-more img {
+  margin: 0px auto;
+  display: block;
+  width: 30px;
+  height: 100%;
+}

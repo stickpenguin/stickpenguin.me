@@ -7,4 +7,4 @@ You can also find the code of the **Trends Ideas** project linked on the site at
 * [Article](https://stickpenguin.me/trends-ideas/article.html) page
 * [Kitchens](https://stickpenguin.me/trends-ideas/kitchens.html) page
 
-You can find my CV here: [web](https://www.canva.com/design/DAE03QlfRtw/hkn1epkQV1jitmAzd_PVQw/view) version or [pdf](https://raw.githubusercontent.com/stickpenguin/stickpenguin.me/main/Catherine%20Mai%20Web%20CV.pdf) version
+You can find my CV here: [web](https://www.canva.com/design/DAE03QlfRtw/hkn1epkQV1jitmAzd_PVQw/view) version or [pdf](https://raw.githubusercontent.com/stickpenguin/stickpenguin.me/main/CV.pdf) version

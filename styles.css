@@ -4,10 +4,129 @@ html, body {
   min-height: 100%;
   font-size: 62.5%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0px;
   margin: 0px;
+}
+
+header {
+  max-width: 1440px;
+  /* width: 100%; */
+  /* border: 2px solid green; */
+  /* padding: 60px; */
+  margin: 60px 140px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* Grid  */
+  .grid {
+    display: grid;
+    /* max-width: 1440px; */
+    width: 100%;
+    grid-template-columns: 2.5fr 5fr 2.5fr;
+    grid-template-areas:
+      'name name name'
+      'github student email'
+      'cv cv cv';
+    font-size: 4em;
+  }
+
+  .grid div {
+    border: 1px solid red;
+  }
+
+  .name-grid {
+    grid-area: name;
+    text-align: center;
+  }
+
+  .github-grid {
+    grid-area: github;
+    text-align: left;
+  }
+
+  .student-grid {
+    grid-area: student;
+    text-align: center;
+  }
+
+  .email-grid {
+    grid-area: email;
+    text-align: right;
+  }
+
+  .cv-grid {
+    text-align: center;
+    grid-area: cv;
+  }
+
+
+
+
+
+
+h1 {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: center;
+  /* border: 1px solid red; */
+  /* max-width: 100%; */
+  /* flex-grow: 1; */
+  /* padding: 0px 0px 10px; */
+  margin: 10px 0px;
+  letter-spacing: 1px;
+  /* justify-content: center; */
+}
+
+.name {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  width: 100%;
+}
+
+.name:hover {
+  color: #8F6DD9;
+  letter-spacing: 15px;
+  transition: 0.5s;
+  cursor: default;
+}
+
+.student {
+  border-left: 1px solid #B59EE6;
+  border-right: 1px solid #B59EE6;
+  flex-grow: 3;
+}
+
+.student:hover {
+  color: #8F6DD9;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  cursor: default;
+}
+
+.github {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.email {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.cv {
+  width: 100%;
+}
+
+h1 a {
+  font-weight: 400;
 }
 
 main {
@@ -38,11 +157,20 @@ main {
 .project {
   max-width: 90%;
   width: 45%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
   border-top: 1px solid #B59EE6;
   border-bottom: 1px solid #B59EE6;
   margin: 40px 80px;
   padding: 50px 40px;
   text-align: center;
+}
+
+.project:hover {
+  border-left: 1px solid #B59EE6;
+  border-right: 1px solid #B59EE6;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 h2 {
@@ -108,6 +236,34 @@ a:hover {
 
 /* Small screens */
 @media screen and (max-width: 1250px) {
+  header {
+    max-width: 550px;
+    margin: 60px 0px;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .student {
+    order: 1;
+  }
+
+  .cv {
+    order: 5;
+  }
+
+  .github {
+    text-align: center;
+    order: 4;
+  }
+
+  .email {
+    text-align: center;
+    order: 3;
+  }
+
   .projects {
     padding: 30px 0px;
   }
@@ -125,6 +281,10 @@ a:hover {
     width: 580px;
     margin: 60px 0px;
     padding: 0px;
+    border: none;
+  }
+
+  .project:hover {
     border: none;
   }
 
@@ -154,6 +314,21 @@ a:hover {
   .projects {
     padding: 0px;
     margin: 0px 0px;
+  }
+
+  .name {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    margin: 10px 0px;
+  }
+
+  .student {
+    border: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin: 5px 0px;
   }
 
   h2 {

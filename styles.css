@@ -176,10 +176,10 @@ main {
 }
 
 .project:hover {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-top: 1px solid var(--lilac);
-  border-bottom: 1px solid var(--lilac);
+  border-left: 1px solid var(--lilac);
+  border-right: 1px solid var(--lilac);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .project-name {

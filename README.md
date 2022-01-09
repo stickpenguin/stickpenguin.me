@@ -1,6 +1,6 @@
 ### Welcome traveller! 😸
 
-If you are visiting from [stickpenguin.me](https://stickpenguin.me/), congratulations! You have found the code for the site.
+If you are visiting from [**stickpenguin.me**](https://stickpenguin.me/), congratulations! You have found the code for the site.
 
 You can also find the code of the [**Trends Ideas**](https://stickpenguin.me/trends-ideas/index.html) project linked on the site at [`trends-ideas`](https://github.com/stickpenguin/stickpenguin.me/tree/main/trends-ideas).
 * [Home](https://stickpenguin.me/trends-ideas/index.html) page

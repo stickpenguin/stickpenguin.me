@@ -110,7 +110,7 @@ h1 {
 .student {
   border-left: 1px solid var(--lilac);
   border-right: 1px solid var(--lilac);
-  flex-grow: 3;
+  flex-basis: calc(46% - 4px);
 }
 
 .student:hover {
@@ -122,12 +122,12 @@ h1 {
 
 .github {
   text-align: left;
-  flex-grow: 1;
+  flex-basis: 27%;
 }
 
 .email {
   text-align: right;
-  flex-grow: 1;
+  flex-basis: 27%;
 }
 
 .cv {
@@ -229,6 +229,8 @@ a:hover {
   transition: 0.25s;
 }
 
+/********** RESPOSNIVE **********/
+
 /* 2K */
 @media screen and (max-width: 1480px) {
   .project {
@@ -262,6 +264,7 @@ a:hover {
   }
 
   .student {
+    flex-basis: 100%;
     order: 1;
   }
 
@@ -270,11 +273,13 @@ a:hover {
   }
 
   .github {
+    flex-basis: 100%;
     text-align: center;
     order: 4;
   }
 
   .email {
+    flex-basis: 100%;
     text-align: center;
     order: 3;
   }

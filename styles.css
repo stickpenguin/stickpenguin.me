@@ -91,7 +91,7 @@ h1 {
   /* justify-content: center; */
 }
 
-.name {
+.name, .cat {
   font-size: 3.5rem;
   text-transform: uppercase;
   letter-spacing: 10px;

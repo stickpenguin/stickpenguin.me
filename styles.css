@@ -173,6 +173,7 @@ main {
   margin: 40px 80px;
   padding: 50px 40px;
   text-align: center;
+  transition: 0.15s;
 }
 
 .project:hover {
@@ -180,6 +181,7 @@ main {
   border-right: 1px solid var(--lilac);
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  transition: 0.15s;
 }
 
 .project-name {
@@ -211,6 +213,7 @@ a {
   text-decoration: none;
   color: var(--dark-lilac);
   font-weight: bold;
+  transition: 0.25s;
 }
 
 h2 a {
@@ -221,6 +224,7 @@ h2 a {
 a:hover {
   color: var(--green1);
   text-decoration: wavy overline;
+  transition: 0.25s;
 }
 
 /* 2K */

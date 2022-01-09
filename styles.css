@@ -148,7 +148,7 @@ main {
   margin: 0px;
   display: flex;
   justify-content: center;
-  padding: 80px 0px;
+  padding: 0px 0px 80px;
 }
 
 .projects-list {

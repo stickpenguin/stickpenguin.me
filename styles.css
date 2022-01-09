@@ -1,3 +1,10 @@
+:root {
+  --green1: #4AB342;
+  --green2: #16c60c;
+  --lilac: #B59EE6;
+  --dark-lilac: #8F6DD9;
+}
+
 html, body {
   background-color: black;
   color: white;
@@ -92,20 +99,20 @@ h1 {
 }
 
 .name:hover {
-  color: #8F6DD9;
+  color: var(--dark-lilac);
   letter-spacing: 15px;
   transition: 0.5s;
   cursor: default;
 }
 
 .student {
-  border-left: 1px solid #B59EE6;
-  border-right: 1px solid #B59EE6;
+  border-left: 1px solid var(--lilac);
+  border-right: 1px solid var(--lilac);
   flex-grow: 3;
 }
 
 .student:hover {
-  color: #8F6DD9;
+  color: var(--dark-lilac);
   letter-spacing: 2px;
   transition: 0.5s;
   cursor: default;
@@ -159,16 +166,16 @@ main {
   width: 45%;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  border-top: 1px solid #B59EE6;
-  border-bottom: 1px solid #B59EE6;
+  border-top: 1px solid var(--lilac);
+  border-bottom: 1px solid var(--lilac);
   margin: 40px 80px;
   padding: 50px 40px;
   text-align: center;
 }
 
 .project:hover {
-  border-left: 1px solid #B59EE6;
-  border-right: 1px solid #B59EE6;
+  border-left: 1px solid var(--lilac);
+  border-right: 1px solid var(--lilac);
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
@@ -200,12 +207,12 @@ p {
 
 a {
   text-decoration: none;
-  color: #8F6DD9;
+  color: var(--dark-lilac);
   font-weight: bold;
 }
 
 h2 a {
-  color: #B59EE6;
+  color: var(--lilac);
   font-weight: 400;
 }
 
@@ -290,7 +297,7 @@ a:hover {
 
   .divider {
     width: 580px;
-    border-top: 2px solid #B59EE6;
+    border-top: 2px solid var(--lilac);
     max-width: 90%;
   }
 

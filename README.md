@@ -9,7 +9,7 @@ You can also find the code of the [**Trends Ideas**](https://stickpenguin.me/tre
 
 **Cyber Checkup's** infrastructure is currently offline, but I am planning to upload a frontend-only version - stay tuned...
 
-You can find my **CVs** here: [**computing**](https://github.com/stickpenguin/stickpenguin.me/blob/main/CV%20-%20Dev.pdf) - [**stage & theatre**](https://github.com/stickpenguin/stickpenguin.me/blob/main/CV%20-%20Stage.pdf)
+You can find my **CVs** here: [**computing**](https://github.com/stickpenguin/stickpenguin.me/blob/main/CV%20-%20Dev.pdf) - [**theatre**](https://github.com/stickpenguin/stickpenguin.me/blob/main/CV%20-%20Stage.pdf)
 
 ```
        _                        
